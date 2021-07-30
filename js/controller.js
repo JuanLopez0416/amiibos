@@ -7,15 +7,14 @@ const controllerSearch = async function () {
   const query = SearchView.getQuery();
   if (!query) return;
 
-  // Back to slide 0
-  model.state.slide = 0;
-  ResultsView.moveToSlide(model.state.slide);
-
   // Render load message
   SearchView.moveToTop();
   ResultsView.renderLoading();
   // load Amiibo
   await model.loadAmiibo(query);
+  // Back to slide 0
+  model.state.slide = 0;
+  ResultsView.moveToSlide(model.state.slide);
   // Render View
   ResultsView.render(model.state);
 };
