@@ -61,11 +61,13 @@ class ResultsView {
   }
 
   _showDirections() {
-    if (!Array.isArray(this.data.amiibos) || this.data.amiibos.length <= 1)
-      return;
-
     const left = document.querySelector(`.left`);
     const right = document.querySelector(`.right`);
+
+    if (!Array.isArray(this.data.amiibos) || this.data.amiibos.length <= 1) {
+      this._toggleElement(left, 'hide');
+      this._toggleElement(right, 'hide');
+    }
 
     if (this.data.slide > 0 && this.data.slide < this.data.amiibos.length - 1) {
       this._toggleElement(left, 'display');
