@@ -79,7 +79,10 @@ class ResultsView {
       this._toggleElement(left, 'hide');
     }
 
-    if (this.data.slide === this.data.amiibos.length - 1) {
+    if (
+      this.data.slide === this.data.amiibos.length - 1 &&
+      this.data.amiibos.length !== 1
+    ) {
       this._toggleElement(left, 'display');
       this._toggleElement(right, 'hide');
     }

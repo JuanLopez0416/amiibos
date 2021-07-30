@@ -12,11 +12,11 @@ const controllerSearch = async function () {
   ResultsView.renderLoading();
   // load Amiibo
   await model.loadAmiibo(query);
-  // Render View
-  ResultsView.render(model.state);
   // Back to slide 0
   model.state.slide = 0;
   ResultsView.moveToSlide(model.state.slide);
+  // Render View
+  ResultsView.render(model.state);
 };
 
 const controllerPag = function (dir) {
