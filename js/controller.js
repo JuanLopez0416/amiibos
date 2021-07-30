@@ -7,6 +7,10 @@ const controllerSearch = async function () {
   const query = SearchView.getQuery();
   if (!query) return;
 
+  // Back to slide 0
+  model.state.slide = 0;
+  ResultsView.moveToSlide(model.state.slide);
+
   // Render load message
   SearchView.moveToTop();
   ResultsView.renderLoading();
@@ -21,7 +25,6 @@ const controllerPag = function (dir) {
   model.state.slide =
     dir === 'next' ? model.state.slide + 1 : model.state.slide - 1;
   ResultsView.moveToSlide(model.state.slide);
-  // Display or hide buttons
 };
 
 const init = function () {
