@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  background: radial-gradient(#e60012, #c00817);
+  font-family: 'Nunito';
+  min-height: 100vh;
+}
+
+.search-row {
+  padding: 1.875rem 0 1rem 0;
+  text-align: center;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+}
+
+.search-input-container {
+  display: flex;
+  width: 15.625rem;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  background: radial-gradient(rgb(255, 255, 255), rgb(204, 204, 204));
+  padding: 0;
+  margin: 0;
+  padding: 0.5rem;
+  transform: scale(0.8, 0.8);
+  transition: 500ms;
+}
+
+#search-input {
+  border: none;
+  background: none;
+  height: 1.875rem;
+  margin: 0;
+  padding: 0.625rem;
+  width: 100%;
+  text-align: right;
+  outline: none;
+  font-family: 'Nunito';
+  font-size: 1.5rem;
+}
+
+#search-input::hover {
+  background: none;
+}
+
+.search-btn {
+  width: 2.5rem;
+  height: 1.875rem;
+  background: none;
+  border: none;
+  border-left: 0.0625rem solid #e60012;
+  cursor: pointer;
+}
+
+.search-btn img {
+  width: 100%;
+}
+
+.search-empty {
+  transform: scale(1, 1);
+  transform: translateY(30vh);
+}
+
+.search-text {
+  color: #fff;
+}
+
+.amiibo-row,
+.pagination-row {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.amiibo-container {
+  overflow: hidden;
+  padding: 0;
+  max-width: 21.875rem;
+}
+
+.pagination-container {
+  width: 21.875rem;
+  display: flex;
+  padding-bottom: 1.875rem;
+}
+
+.amiibo-slide {
+  display: flex;
+  transition: 500ms;
+}
+
+.amiibo-transform {
+  transform: translateX(-100%);
+}
+
+.amiibo-item {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.amiibo-img-container {
+  width: 21rem;
+  margin: 0.625rem 0;
+}
+
+.amiibo-img-container img {
+  width: 100%;
+}
+
+.amiibo-name {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #fff;
+}
+
+.amiibo-item p {
+  margin: 0;
+}
+
+.amiibo-info {
+  color: #fff;
+}
+
+.amiibo-series {
+  font-size: 1.8rem;
+}
+
+.amiibo-series {
+  font-size: 1.8rem;
+}
+
+.pagination-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.pagination-side {
+  width: 50%;
+  transition: 500ms;
+}
+
+.left {
+  text-align: left;
+}
+
+.left button {
+  transform: rotate(180deg);
+}
+
+.right {
+  text-align: right;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}

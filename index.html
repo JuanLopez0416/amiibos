@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amiibo Info</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer type="module" src="js/controller.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="search-row">
+        <h2 class="search-text">Busca un amiibo</h2>
+        <div class="search">
+          <form class="search-input-container search-empty">
+            <input type="text" id="search-input" />
+            <button class="search-btn">
+              <img src="search.png" alt="search button" />
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="amiibo-row hidden">
+        <div class="amiibo-container">
+          <div class="amiibo-slide">
+            <!-- <div class="amiibo-item">
+              <h2 class="amiibo-name">Kirby</h2>
+              <figure class="amiibo-img-container">
+                <img
+                  src="https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f000000-000a0002.png"
+                  alt="Amiiibo image"
+                />
+              </figure>
+              <p class="amiibo-series amiibo-info">Serie: Super Smash Bros</p>
+              <p class="amiibo-game-series amiibo-info">Juego: Kirby</p>
+              <p class="amiibo-date amiibo-info">Fecha: 16/04/2020</p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="pagination-row">
+        <div class="pagination-container">
+          <div class="left pagination-side hidden">
+            <button class="pagination-btn" data-direction="prev">
+              <img src="next.png" alt="next slide" />
+            </button>
+          </div>
+          <div class="right pagination-side hidden">
+            <button class="pagination-btn" data-direction="next">
+              <img src="next.png" alt="next slide" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
