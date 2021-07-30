@@ -39,7 +39,7 @@ main {
 
 #search-input {
   border: none;
-  background: none;
+  background: none !important;
   height: 1.875rem;
   margin: 0;
   padding: 0.625rem;
@@ -50,14 +50,10 @@ main {
   font-size: 1.5rem;
 }
 
-#search-input::hover {
-  background: none;
-}
-
 .search-btn {
   width: 2.5rem;
   height: 1.875rem;
-  background: none;
+  background: none !important;
   border: none;
   border-left: 0.0625rem solid #e60012;
   cursor: pointer;
