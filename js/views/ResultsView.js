@@ -74,7 +74,7 @@ class ResultsView {
       this._toggleElement(right, 'display');
     }
 
-    if (this.data.slide === 0) {
+    if (this.data.slide === 0 && this.data.amiibos.length !== 1) {
       this._toggleElement(right, 'display');
       this._toggleElement(left, 'hide');
     }
